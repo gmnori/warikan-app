@@ -1,0 +1,36 @@
+<h2>歓送迎会</h2>
+      <form oninput="souninzuu.value = Number(syuhin.value) + Number(ippan.value);" action="#" method="post">
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <input type="tel" name="kaikei">円
+            </td>
+          </tr>
+
+          <tr>
+            <th>主賓</th>
+            <td>
+              <input type="tel" name="syuhin">名
+            </td>
+          </tr>
+
+          <tr>
+            <th>一般</th>
+            <td>
+              <input type="tel" name="ippan">名
+            </td>
+          </tr>
+
+          <tr>
+            <th>総人数</th>
+            <td>
+              <output name="souninzuu" for="syuhin ippan">
+              </output>名
+            </td>
+          </tr>
+
+        </table>
+          <input type="submit" value="計算！">
+      </form>

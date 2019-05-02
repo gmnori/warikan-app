@@ -1,0 +1,48 @@
+    <div class="container">
+    <h2>部署飲み</h2>
+      <!--<form oninput="souninzuu.value = Number(joushi.value) + Number(chuken.value) + Number(wakate.value);" action="#" method="post">-->
+        
+        <!--totalAmount <%= @totalAmount %>-->
+        <!--totalHeadcount <%= @totalHeadcount %>-->
+
+        
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <%= @totalAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>上司</th>
+            <td>
+              <%= @price1.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>中堅</th>
+            <td>
+              <%= @price2.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>若手</th>
+            <td>
+              <%= @price3.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+            <th>端数</th>
+            <td>
+              <%= @amariAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+        </table>
+           </div>
+          
+      <!--</form>-->

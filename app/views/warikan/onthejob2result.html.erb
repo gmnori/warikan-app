@@ -1,0 +1,59 @@
+    <div class="container">
+    <h2>部署飲み(男女別)</h2>
+      <!--<form oninput="souninzuu.value = Number(joushi_male.value) + Number(joushi_female.value) + Number(chuken_male.value) + Number(chuken_female.value) + Number(wakate_male.value) + Number(wakate_female.value);" action="#" method="post">-->
+       
+       <!--totalAmount <%= @totalAmount %>-->
+       <!--calcHeadcount <%= @calcHeadcount %>-->
+       
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <%= @totalAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>人数</th> <th>男性</th> <th>女性</th>
+          </tr>
+
+          <tr>
+            <th>上司</th>
+            <td>
+              <%= @malePrice1.to_s(:delimited) %>円
+            </td>
+            <td>
+              <%= @femalePrice1.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>中堅</th>
+            <td>
+              <%= @malePrice2.to_s(:delimited) %>円
+            </td>
+            <td>
+              <%= @femalePrice2.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>若手</th>
+            <td>
+              <%= @malePrice3.to_s(:delimited) %>円
+            </td>
+            <td>
+              <%= @femalePrice3.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+            <th>端数</th>
+            <td>
+              <%= @amariAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+        </table>
+         </div>
+      <!--</form>-->

@@ -1,0 +1,25 @@
+  <div class="container">
+  <h2>友人同士</h2>
+      <!--<form action="#" method="post">-->
+        <%= form_tag("/warikan/friendsCalc1") do %>
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <input type="tel" name="kaikei" class="textbox">円
+            </td>
+          </tr>
+
+          <tr>
+            <th>人数</th>
+            <td>
+              <input type="tel" name="ippan" class="textbox">名
+            </td>
+          </tr>
+
+        </table>
+          <input type="submit" value="計算！" class="button">
+          <% end %>
+    </div>
+      <!--</form>-->

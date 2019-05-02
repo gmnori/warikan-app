@@ -1,0 +1,51 @@
+    <div class="container">
+    <h2>おもてなし(男女別)</h2>
+
+      <table>
+
+        <tr>
+          <th>お会計</th>
+          <td>
+            <%= @totalAmount.to_s(:delimited) %>円
+          </td>
+        </tr>
+
+        <tr>
+          <th>会計</th> <th>男性</th> <th>女性</th>
+        </tr>
+
+        <tr>
+          <th>主賓</th>
+          <td>
+            <%= @malePrice2.to_s(:delimited) %>円
+          </td>
+          <td>
+            <%= @femalePrice2.to_s(:delimited) %>円
+          </td>
+        </tr>
+
+        <tr>
+          <th>一般</th>
+          <td>
+            <%= @malePrice3.to_s(:delimited) %>円
+          </td>
+          <td>
+            <%= @femalePrice3.to_s(:delimited) %>円
+          </td>
+        </tr>
+
+        <tr>
+          <th>端数</th>
+          <td>
+            <%= @amariAmount.to_s(:delimited) %>円
+          </td>
+        </tr>
+
+      </table>
+         </div>
+        
+          <!--<div>-->
+          <!--  <button type="submit">計算！</button>-->
+          <!--</div>-->
+
+      

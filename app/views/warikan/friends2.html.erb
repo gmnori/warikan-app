@@ -1,0 +1,42 @@
+    <div class="container">
+    <h2>友人同士(男女別)</h2>
+      <!--<form oninput="souninzuu.value = Number(ippan_male.value) + Number(ippan_female.value);" action="#" method="post">-->
+       <%= form_tag("/warikan/friendsCalc2") do %>
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <input type="tel" name="kaikei" class="textbox">円
+            </td>
+          </tr>
+
+          <tr>
+            <th>人数</th> <th>男性</th> <th>女性</th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input type="tel" name="ippan_male" class="textbox">名
+            </td>
+            <td>
+              <input type="tel" name="ippan_female" class="textbox">名
+            </td>
+          </tr>
+
+          <!--<tr>-->
+          <!--  <th>総人数</th>-->
+          <!--  <td>-->
+          <!--    <output name="souninzuu" for="syuhin ippan">-->
+          <!--    </output>名-->
+          <!--  </td>-->
+          <!--</tr>-->
+
+        </table>
+          
+          <input type="submit" value="計算！" class="button">
+          
+          <% end %>
+           </div>
+      <!--</form>-->

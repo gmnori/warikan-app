@@ -1,0 +1,54 @@
+    <div class="container">
+    <h2>おもてなし(男女別)</h2>
+    <!--<form oninput="souninzuu.value = Number(syuhin_male.value) + Number(ippan_male.value) + Number(syuhin_female.value) + Number(ippan_female.value);" action="#" method="post">-->
+      <%= form_tag("/warikan/settaiCalc2") do %>
+      <table>
+
+        <tr>
+          <th>お会計</th>
+          <td>
+            <input type="tel" name="kaikei" class="textbox">円
+          </td>
+        </tr>
+
+        <tr>
+          <th>人数</th> <th>男性</th> <th>女性</th>
+        </tr>
+
+        <tr>
+          <th>主賓</th>
+          <td>
+            <input type="tel" name="syuhin_male" class="textbox">名
+          </td>
+          <td>
+            <input type="tel" name="syuhin_female" class="textbox">名
+          </td>
+        </tr>
+
+        <tr>
+          <th>一般</th>
+          <td>
+            <input type="tel" name="ippan_male" class="textbox">名
+          </td>
+          <td>
+            <input type="tel" name="ippan_female" class="textbox">名
+          </td>
+        </tr>
+
+        <!--<tr>-->
+        <!--  <th>総人数</th>-->
+        <!--  <td>-->
+        <!--    <output name="souninzuu">-->
+        <!--    </output>名-->
+        <!--  </td>-->
+        <!--</tr>-->
+
+        </table>
+        <input type="submit" value="計算！" class="button">
+        <% end %>
+         </div>
+          <!--<div>-->
+          <!--  <button type="submit">計算！</button>-->
+          <!--</div>-->
+
+      <!--</form>-->

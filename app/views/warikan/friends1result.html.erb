@@ -1,0 +1,31 @@
+  <div class="container">
+  <h2>友人同士</h2>
+      <!--<form action="#" method="post">-->
+        
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <%= @totalAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>会計</th>
+            <td>
+              <%= @price1.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>端数</th>
+            <td>
+              <%= @amariAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+        </table>
+
+      <!--</form>-->
+   </div>

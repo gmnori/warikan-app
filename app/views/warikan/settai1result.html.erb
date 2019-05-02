@@ -1,0 +1,41 @@
+   <div class="container">
+    <h2>おもてなし</h2>
+      <!--<form oninput="souninzuu.value = Number(syuhin.value) + Number(ippan.value);" action="#" method="post">-->
+      
+      <!--totalAmount <%= @totalAmount %>-->
+      <!--totalHeadcount <%= @totalHeadcount %>-->
+      
+        <table>
+
+          <tr>
+            <th>お会計</th>
+            <td>
+              <%= @totalAmount.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>主賓</th>
+            <td>
+              <%= @price2.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+            <th>一般</th>
+            <td>
+              <%= @price3.to_s(:delimited) %>円
+            </td>
+          </tr>
+
+          <tr>
+          <th>端数</th>
+          <td>
+            <%= @amariAmount.to_s(:delimited) %>円
+          </td>
+        </tr>
+
+        </table>
+         </div>
+        
+      <!--</form>-->
