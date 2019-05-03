@@ -7,7 +7,7 @@
        
         <table>
 
-          <tr>
+          <tr id="okaikei">
             <th>お会計</th>
             <td>
               <%= @totalAmount.to_s(:delimited) %>円
@@ -54,6 +54,15 @@
             </td>
           </tr>
 
+          <tr>
+            <!--<th></th>-->
+            <td>
+              <label for="toIndex" class="toIndex" >
+                <%= link_to("戻る", "/") %>
+              </label>
+            </td>
+          </tr>
+          
         </table>
          </div>
       <!--</form>-->
