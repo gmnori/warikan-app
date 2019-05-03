@@ -2,14 +2,14 @@
   <h2>友人同士</h2>
       <!--<form action="#" method="post">-->
         
-        <table>
+        <table class="resultTable">
 
-          <!--<tr id="okaikei">-->
+          <tr>
             <th>お会計</th>
             <td>
               <%= @totalAmount.to_s(:delimited) %>円
             </td>
-          <!--</tr>-->
+          </tr>
 
           <tr>
             <th>会計</th>
@@ -25,16 +25,14 @@
             </td>
           </tr>
 
-          <tr>
-            <!--<th></th>-->
-            <td>
-              <label for="toIndex" class="toIndex" >
+        </table>
+
+          <div class="toIndex">
+              <label for="toIndex">
                 <%= link_to("戻る", "/") %>
               </label>
-            </td>
-          </tr>
+          </div>
           
-        </table>
 
       <!--</form>-->
    </div>

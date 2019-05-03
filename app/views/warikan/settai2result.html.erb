@@ -1,9 +1,9 @@
     <div class="container">
     <h2>おもてなし(男女別)</h2>
 
-      <table>
+      <table class="resultTable">
 
-        <tr id="okaikei">
+        <tr>
           <th>お会計</th>
           <td>
             <%= @totalAmount.to_s(:delimited) %>円
@@ -11,7 +11,7 @@
         </tr>
 
         <tr>
-          <th>会計</th> <th>男性</th> <th>女性</th>
+          <th>会計</th> <th class="male">男性</th> <th class="female">女性</th>
         </tr>
 
         <tr>

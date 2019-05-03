@@ -1,10 +1,10 @@
     <div class="container">
     <h2>おもてなし</h2>
-      <!--<form oninput="souninzuu.value = Number(syuhin.value) + Number(ippan.value);" action="#" method="">-->
+      
       <%= form_tag("/warikan/settaiCalc1") do %>
         <table>
 
-          <tr id="okaikei">
+          <tr>
             <th>お会計</th>
             <td>
               <input type="tel" name="kaikei" class="textbox">円
@@ -25,16 +25,7 @@
             </td>
           </tr>
 
-          <!--<tr>-->
-          <!--  <th>総人数</th>-->
-          <!--  <td>-->
-          <!--    <output name="souninzuu" for="syuhin ippan">-->
-          <!--    </output>名-->
-          <!--  </td>-->
-          <!--</tr>-->
-
         </table>
           <input type="submit" value="計算！" class="button">
           <% end %>
            </div>
-      <!--</form>-->

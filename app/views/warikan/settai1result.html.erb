@@ -1,13 +1,8 @@
    <div class="container">
     <h2>おもてなし</h2>
-      <!--<form oninput="souninzuu.value = Number(syuhin.value) + Number(ippan.value);" action="#" method="post">-->
-      
-      <!--totalAmount <%= @totalAmount %>-->
-      <!--totalHeadcount <%= @totalHeadcount %>-->
-      
-        <table>
+        <table class="resultTable">
 
-          <tr id="okaikei">
+          <tr>
             <th>お会計</th>
             <td>
               <%= @totalAmount.to_s(:delimited) %>円
@@ -33,18 +28,14 @@
           <td>
             <%= @amariAmount.to_s(:delimited) %>円
           </td>
-        </tr>
+          </tr>
 
-          <tr>
-            <!--<th></th>-->
-            <td>
-              <label for="toIndex" class="toIndex" >
+        </table>
+          <div class="toIndex">
+              <label for="toIndex">
                 <%= link_to("戻る", "/") %>
               </label>
-            </td>
-          </tr>
-          
-        </table>
+          </div>
+        
          </div>
         
-      <!--</form>-->

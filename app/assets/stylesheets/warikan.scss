@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-    font: 120%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+    font: 2.0em 'Avenir Next', 'Hiragino Sans', sans-serif;
     line-height: 2.0;
 }
 
@@ -24,6 +24,7 @@ body {
 
 table {
     margin: auto;
+    width: 100%;
     height: 80%;
     border-spacing: 15px 15px;
     table-layout: fixed;
@@ -37,37 +38,27 @@ form {
 label {
     width : 100%;
     margin: 0 auto;
-    font-size: 2.5em;
+    font-size: 2.0em;
     opacity: 0.6;
 }
 
-label.toIndex {
-    width : 100%;
-    margin: 0 auto;
-    font-size: 1.5em;
-    text-align: center;
-    opacity: 1.5;
+td {
+    padding: 10px auto;
+    border: 15px auto;
 }
 
-.textbox {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 3px;
-    width: 50%;
-    height: 40%;
-    font-size: 2.0em;
-    text-align: center;
-}
+// Indexのテーブル
 
 .button {
-    margin: 10px auto;
+    margin: auto;
     width: 20%;
-    height: 15%;
-    font-size: 2.0em;
+    // height: 15%;
+    font-size: 1.5em;
     position: relative;
     display: inline-block;
     padding: 0.25em 0.5em;
     text-decoration: none;
+    text-align: center;
     color: #000;
     background-color:#f39c12;
     border-radius: 4px;
@@ -79,13 +70,8 @@ label.toIndex {
     transition: 0.3s ease-in-out;
 }
 
-td {
-    padding: 10px auto;
-    border: 15px auto;
-}
-
 td.situation {
-    width: 50%;
+    width: 40%;
     height: 25%;
     margin: 0 auto;
     text-align: center;
@@ -100,6 +86,20 @@ td:hover {
 }
 
 
+// Input画面
+
+
+.textbox {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 3px;
+    width: 60%;
+    height: 60%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
 tr {
     width: 100%;
     height: 10%;
@@ -107,12 +107,16 @@ tr {
     border: 15px auto;
 }
 
-th {
-    // width : 15%;
-    // height: 30%;
-    // padding: 15px;
+th.male {
+    width: 30%;
     margin: auto;
 }
+
+th.female {
+    width: 30%;
+    maegin: auto;
+}
+
 
 a {
     margin: auto;
@@ -121,7 +125,29 @@ a {
     color: #000;
 }
 
-#okaikei {
+// Result画面
+
+table.resultTable {
+    margin: auto;
+    width: 100%;
+    height: 65%;
+    border-spacing: 15px 15px;
+    table-layout: fixed;
+}
+
+
+
+// Indexに戻る
+
+label.toIndex {
+    width : 100%;
     margin: 0 auto;
+    font-size: 1.5em;
     text-align: center;
+}
+
+div.toIndex {
+    margin: auto;
+    text-align: center;
+    font-size: 0.7em;
 }

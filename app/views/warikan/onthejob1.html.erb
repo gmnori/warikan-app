@@ -1,10 +1,9 @@
     <div class="container">
     <h2>部署飲み</h2>
-      <!--<form oninput="souninzuu.value = Number(joushi.value) + Number(chuken.value) + Number(wakate.value);" action="#" method="">-->
         <%= form_tag("/warikan/onthejobCalc1") do %>
         <table>
 
-          <tr id="okaikei">
+          <tr>
             <th>お会計</th>
             <td>
               <input type="tel" name="kaikei" class="textbox">円
@@ -31,17 +30,9 @@
               <input type="tel" name="wakate" class="textbox">名
             </td>
           </tr>
-
-          <!--  <th>総人数</th>-->
-          <!--  <td>-->
-          <!--  <output name="souninzuu" for="joushi chuken wakate">
-          <!--</output>名-->
-          <!--  </td>-->
-          <!--</tr>-->
-
+          
         </table>
           <input type="submit" value="計算！" class="button">
           
           <% end %>
            </div>
-      <!--</form>-->
